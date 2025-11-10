@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./scripts.js" type="module"></script>
+    <script src="./modal.js" type="module"></script>
+    <script src="./innerModal.js" type="module"></script>
+    <script src="./dateConverter.js" type="module"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <h1>Podcast App</h1>
+    </nav>
+    <main>
+      <div id="filters">
+        <p>Filter by:</p>
+        <select>
+          <option value="All Genres">All Genres</option>
+          <option value="Genre 1">Genre 1</option>
+          <option value="Genre 2">Genre 2</option>
+          <option value="Genre 3">Genre 3</option>
+          <option value="Genre 4">Genre 4</option>
+        </select>
+        <select>
+          <option value="Recently Updated">Recently Updated</option>
+          <option value="Most Popular">Most Popular</option>
+          <option value="Newest">Newest</option>
+        </select>
+      </div>
+      <div id="thumbnail-container"></div>
+      <dialog id="modal">
+        <div class="modal-content" id="podcast-modal-content">
+          <span class="close">&times;</span>
+        </div>
+      </dialog>
+    </main>
+  </body>
+</html>
