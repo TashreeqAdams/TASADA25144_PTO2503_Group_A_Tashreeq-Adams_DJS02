@@ -124,4 +124,19 @@ class PodcastModal extends HTMLElement {
       </div>
     `;
   }
+
+  connectedCallback() {
+    this.shadowRoot.querySelector(".close").addEventListener("click", () => {
+      this.removeAttribute("open");
+      this.dispatchEvent(
+        new CustomEvent("modal-closed", { bubbles: true, composed: true })
+      );
+    });
+  }
+
+  disconnectedCallback() {
+    this.shadowRoot
+      .querySelector(".close")
+      .removeEventlistener("click", thise.close);
+  }
 }
