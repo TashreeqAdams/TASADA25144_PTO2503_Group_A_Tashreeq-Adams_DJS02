@@ -4,7 +4,7 @@ import { daysAgo } from "./dateConverter.js";
 class podcastPreview extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow.apply({ mode: "open" });
+    this.attachShadow({ mode: "open" });
   }
   connectedCallback() {
     const container = document.createElement("div");
