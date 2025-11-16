@@ -1,5 +1,5 @@
-import { podcasts, genres, seasons } from "./data.js";
-import { daysAgo } from "./dateConverter.js";
+import { podcasts, genres, seasons } from "../data.js";
+import { daysAgo } from "../utilities/dateConverter.js";
 
 const modal = document.getElementById("modal");
 const preview = document.querySelector("podcast-preview");

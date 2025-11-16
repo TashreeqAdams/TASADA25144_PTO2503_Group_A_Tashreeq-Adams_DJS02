@@ -1,4 +1,5 @@
-import { podcasts, genres, seasons } from "./data.js";
+import { podcasts } from "../data.js";
+import { daysAgo } from "../utilities/dateConverter.js";
 
 //Creates the structure of the content inside the modal
 const addDetails = () => {

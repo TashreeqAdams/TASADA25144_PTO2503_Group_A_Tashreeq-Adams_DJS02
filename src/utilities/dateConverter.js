@@ -1,4 +1,4 @@
-import { podcasts } from "./data.js";
+import { podcasts } from "../data.js";
 
 export function daysAgo(isoString) {
   // Create Date objects for the given date and the current date

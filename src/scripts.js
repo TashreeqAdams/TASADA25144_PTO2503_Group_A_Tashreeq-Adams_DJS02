@@ -1,5 +1,5 @@
 import { podcasts, genres, seasons } from "./data.js";
-import { daysAgo } from "./dateConverter.js";
+import { daysAgo } from "./utilities/dateConverter.js";
 
 class podcastPreview extends HTMLElement {
   constructor() {
