@@ -34,7 +34,9 @@ class podcastPreview extends HTMLElement {
           <div class="podcast-genres">
             ${splitTitles.map((title) => `<p>${title.trim()}</p>`).join("")}
           </div>
-          <p class="podcast-update">Updated ${daysAgo(podcast.updated)}</p>
+          <p class="podcast-update">Last updated: ${daysAgo(
+            podcast.updated
+          )}</p>
         `;
 
       container.appendChild(podcastThumbnail);

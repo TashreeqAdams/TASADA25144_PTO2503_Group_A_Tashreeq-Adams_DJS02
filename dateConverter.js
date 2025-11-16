@@ -6,5 +6,5 @@ export function daysAgo(isoString) {
   const now = new Date();
 
   // Return the result as a formatted string
-  return `${now} days ago`;
+  return now;
 }
