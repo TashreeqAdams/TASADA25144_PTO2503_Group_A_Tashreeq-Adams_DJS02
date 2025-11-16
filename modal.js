@@ -2,7 +2,9 @@ import { podcasts, genres, seasons } from "./data.js";
 import { daysAgo } from "./dateConverter.js";
 
 const modal = document.getElementById("modal");
-const openModal = document.getElementsByClassName("thumbnail");
+const preview = document.querySelector("podcast-preview");
+const shadow = preview.shadowRoot;
+const openModal = shadow.querySelectorAll("thumbnail");
 const closeModal = document.getElementsByClassName("close");
 
 /**
