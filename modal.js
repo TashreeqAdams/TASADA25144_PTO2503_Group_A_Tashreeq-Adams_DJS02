@@ -4,7 +4,7 @@ import { daysAgo } from "./dateConverter.js";
 const modal = document.getElementById("modal");
 const preview = document.querySelector("podcast-preview");
 const shadow = preview.shadowRoot;
-const openModal = shadow.querySelectorAll("thumbnail");
+const openModal = shadow.querySelectorAll(".thumbnail");
 const closeModal = document.getElementsByClassName("close");
 
 /**
